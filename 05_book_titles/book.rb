@@ -12,7 +12,7 @@ class Book
 		array = string.split(" ")
 		array.map! do |word|
 			if !(little_words.include?(word))
-				word.capitalize
+				word = word.capitalize
 			else
 				word = word
 			end
